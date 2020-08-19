@@ -1,23 +1,292 @@
 <!DOCTYPE html>
-<html lang="ru"> 
+<html lang="ru">
+
 <head>
 	<meta charset="utf-8">
-	<title>Заголовок</title>
+	<title>T-systems</title>
 	<meta name="description" content="">
 	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
 </head>
 
 <body>
 
 
-	<header></header>
-	<main></main>
+	<header>
+		<div class="header-top">
+			<div class="header-top__inner container">
+				<a class="header-top__leftmenu openMenu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</a>
+				<a href="#" class="header-top__logo">
+					<svg width="72" height="36" viewBox="0 0 72 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M0 23.3849H7.14764V16.2373H0V23.3849Z"
+							fill="white" />
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							d="M21.7959 23.3849H28.9435V16.2373H21.7959V23.3849Z" fill="white" />
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							d="M43.2383 23.3849H50.3859V16.2373H43.2383V23.3849Z" fill="white" />
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							d="M64.6816 23.3849H71.8293V16.2373H64.6816V23.3849Z" fill="white" />
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							d="M28.5896 0H0.352923L0 12.4548L1.87277 12.7792C2.2219 9.10959 3.18485 6.38582 4.76256 4.60887C6.42282 2.74938 8.70828 1.7779 11.6474 1.69441V27.75C11.6474 30.025 11.3296 31.5022 10.6655 32.1834C10.101 32.7659 9.14564 33.1226 7.80131 33.2545C7.40285 33.2877 6.72167 33.3047 5.75872 33.3047V35.2971H23.1838V33.3047C22.2209 33.3047 21.5406 33.2877 21.1412 33.2545C19.7969 33.1226 18.8415 32.7659 18.2771 32.1834C17.6129 31.5022 17.2913 30.025 17.2913 27.75V1.69441C20.2305 1.7779 22.5207 2.74938 24.1809 4.60887C25.7586 6.38582 26.7216 9.10959 27.0698 12.7792L28.9435 12.4548L28.5896 0Z"
+							fill="white" />
+					</svg>
+				</a>
+				<p class="header-top__text">Deutsche Telekom IT Solutions</p>
+			</div>
+		</div>
+		<div class="header-bottom">
+			<div class="header-bottom__inner container">
+				<nav class="header-bottom__menu">
+					<a class="header-bottom__menu-link" href="#">О нас</a>
+					<a class="header-bottom__menu-link" href="#">Решения</a>
+					<a class="header-bottom__menu-link" href="#">Карьера</a>
+					<a class="header-bottom__menu-link" href="#">Контакты</a>
+				</nav>
+				<div class="header-bottom__buttons">
+					<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							d="M17.3434 1.875C13.301 1.87383 9.59767 4.13402 7.75047 7.72963C5.90328 11.3253 6.22265 15.6521 8.57776 18.9375C9.26048 19.886 10.1008 20.7105 11.0621 21.375C12.8793 22.7206 15.0822 23.4439 17.3434 23.4375C23.2977 23.4375 28.1246 18.6106 28.1246 12.6562C28.1246 6.70193 23.2977 1.875 17.3434 1.875ZM17.3434 3.28125C22.5211 3.28125 26.7184 7.47858 26.7184 12.6562C26.7184 17.8339 22.5211 22.0312 17.3434 22.0312C15.3857 22.0333 13.4793 21.4055 11.9059 20.2406H11.8497C11.0249 19.67 10.3049 18.9611 9.72154 18.1453C7.65791 15.2881 7.37118 11.5148 8.97937 8.37857C10.5876 5.24231 13.8189 3.27303 17.3434 3.28125ZM2.29653 25.7203L8.14184 19.8797C8.72491 20.6193 9.39899 21.2823 10.1481 21.8531L4.28872 27.7078L4.2184 27.7781C3.65016 28.3088 2.75927 28.2784 2.22856 27.7102C1.69785 27.1419 1.72828 26.251 2.29653 25.7203Z"
+							fill="white" />
+					</svg>
+					<div class="header-bottom__lang">
+						<a href="#" class="header-bottom__lang-item header-bottom__lang-item--active">RU</a>
+						<a href="#" class="header-bottom__lang-item">EN</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<section class="main-slider container">
+			<div class="section-pl">
+				<div class="main-slider__inner">
+					<div class="main-slider__item">
+						<p class="title main-slider__title--slider">Работаем над проектами, которые<span
+								class="purple-text">меняют
+								мир</span></p>
+						<p class="subtitle main-slider__subtitle--slider">Живем, чтобы делиться идеями</p>
+						<a href="#" class="btn main-slider__btn">Посмотреть вакансии</a>
+					</div>
+					<div class="main-slider__item">
+						<p class="title main-slider__title--slider">Работаем над проектами, которые<span
+								class="purple-text">меняют
+								мир</span></p>
+						<p class="subtitle main-slider__subtitle--slider">Живем, чтобы делиться идеями</p>
+						<a href="#" class="btn main-slider__btn">Посмотреть вакансии</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project container">
+			<div class="section-pl">
+				<p class="title">Глобальные проекты,<span class="purple-text">инновационные решения</span>
+				</p>
+				<div class="project__inner">
+					<div class="project-left">
+						<div class="project-left__item">
+							<div class="project-left__item-svg">
+								<svg width="32" height="40" viewBox="0 0 32 40" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M25.6111 26.2276L18.8031 19.4195L18.6906 19.3071L18.8094 19.2014C19.7175 18.3935 20.2809 17.2217 20.2826 15.9456V15.943C20.2826 13.5495 18.3116 11.5785 15.9181 11.5785L25.6111 26.2276ZM25.6111 26.2276L24.7071 27.1316L24.707 27.1317C22.2893 29.5529 19.0825 30.9914 15.6899 31.2287L15.5085 31.2414L15.5555 31.4171L17.8125 39.85H0.195487L3.83909 26.2526L3.85909 26.1779L3.80994 26.1183C1.79482 23.6745 0.582474 20.5472 0.582474 17.1427L0.582474 17.1401C0.582474 17.14 0.582474 17.14 0.582474 17.14C0.586305 13.393 2.07788 9.80156 4.72933 7.15391L4.72941 7.15383L5.63339 6.24983L12.4414 13.0581L12.5539 13.1705L12.6596 13.0517C13.4681 12.143 14.6412 11.5789 15.918 11.5785L25.6111 26.2276ZM5.94035 10.1728L5.81972 10.0521L5.71552 10.1872C4.16947 12.1915 3.14253 14.5671 3.13963 17.1425V17.1427V17.1455V17.1456C3.14118 23.5559 8.3076 28.7214 14.7183 28.7214H14.7184C17.2939 28.7181 19.6695 27.6916 21.6738 26.1455L21.8088 26.0413L21.6882 25.9207L5.94035 10.1728ZM6.14046 28.3492L5.96235 28.2125L5.90424 28.4294L3.58002 37.104L3.52942 37.2928H3.7249H14.2858H14.4813L14.4307 37.104L12.857 31.2307L12.8313 31.135L12.7332 31.121C10.2766 30.7727 8.0242 29.7952 6.14046 28.3492ZM16.2968 2.70804V0.150712C24.7572 0.231093 31.6301 7.1041 31.7105 15.5644H29.1532C29.0738 8.48331 23.378 2.78746 16.2968 2.70804ZM16.2968 8.4231V5.86553C21.6014 5.94551 25.9158 10.2599 25.9958 15.5644H23.4382C23.3601 11.6396 20.2217 8.50124 16.2968 8.4231Z"
+										fill="#E20074" stroke="#000514" stroke-width="0.3" />
+								</svg>
+							</div>
+							<p class="project-left__item-text">Телекоммуникации</p>
+						</div>
+						<div class="project-left__item">
+							<div class="project-left__item-svg">
+								<svg width="60" height="36" viewBox="0 0 60 36" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M32.089 25.9257H32.122H33.0732C33.5023 25.9257 33.9274 25.7825 34.2085 25.5013C34.4937 25.2162 34.7061 24.7893 34.7061 24.3659V20.5611C34.7061 20.2091 34.5654 19.9262 34.4218 19.7107L34.4634 19.683V19.6098C34.4474 19.5858 34.4307 19.5622 34.4134 19.5391L32.089 25.9257ZM32.089 25.9257L32.076 25.956C31.8569 26.4673 31.6404 26.8987 31.2817 27.2574C30.7051 27.834 29.9127 28.194 29.0488 28.194V28.244M32.089 25.9257L29.0488 28.244M29.0488 28.244V28.294H35.0488C36.9215 28.294 38.3646 29.8061 38.3646 31.7562V31.9025C38.3646 33.7773 36.8504 35.2915 34.9756 35.2915H3.43902C1.5642 35.2915 0.05 33.7773 0.05 31.9025V31.7562C0.05 29.8814 1.5642 28.3672 3.43902 28.3672H9.07317V28.3172V28.2671C7.63324 28.2671 6.4083 27.2587 6.04818 25.9623L6.038 25.9257H6H5.4878C4.56274 25.9257 3.85488 25.2149 3.85488 24.3659V20.5611C3.85488 19.6388 4.63595 18.9281 5.4878 18.9281H9.80488H9.82184L9.8353 18.9178L16.4072 13.8793H26.1024L31.5759 18.9149L31.5903 18.9281H31.6098H33.0732C33.6361 18.9281 34.1286 19.2068 34.4134 19.6251L29.0488 28.244ZM11.5988 27.0379L11.5986 27.0377L11.5951 27.042C11.0197 27.7613 10.0831 28.194 9.14634 28.194V28.244V28.294H28.9756V28.244V28.194C27.5344 28.194 26.3091 27.2572 25.8767 25.9599L25.8653 25.9257H25.8293H12.2195H12.1857L12.1731 25.9571C12.1548 26.0028 12.1367 26.0493 12.1183 26.0962C11.9875 26.431 11.8474 26.7893 11.5988 27.0379ZM6 24.1964H6.03664L6.04768 24.1615C6.48062 22.7905 7.7063 21.855 9.07317 21.855C10.5852 21.855 11.7389 22.8626 12.1721 24.1622L12.1835 24.1964H12.2195H25.7561H25.7927L25.8038 24.1615C26.2367 22.7905 27.3892 21.855 28.9024 21.855C30.4145 21.855 31.5681 22.8626 32.0013 24.1622L32.0127 24.1964H32.0488H32.7805H32.8305V24.1464V20.6342V20.5842H32.7805H30.7514L25.3512 15.5489L25.3368 15.5354H25.3171H16.9756H16.9586L16.9452 15.5458L10.3733 20.5842H5.63415H5.58415V20.6342V24.1464V24.1964H5.63415H6ZM27.4622 25.0976C27.4622 25.8586 28.1448 26.5379 28.9756 26.5379C29.8016 26.5379 30.4929 25.8614 30.3427 25.0927C30.3397 24.3354 29.6601 23.6574 28.9024 23.6574C28.1448 23.6574 27.4622 24.2634 27.4622 25.0976ZM7.7061 25.0976C7.7061 25.8552 8.31215 26.5379 9.14634 26.5379C9.97484 26.5379 10.6614 25.8601 10.5866 25.0951C10.5853 24.3386 9.97962 23.6574 9.14634 23.6574C8.38875 23.6574 7.7061 24.2634 7.7061 25.0976ZM35.0488 33.1232C35.733 33.1232 36.3427 32.5906 36.3427 31.8293V31.683C36.3427 30.9988 35.81 30.3891 35.0488 30.3891H3.5122C2.82799 30.3891 2.21829 30.9218 2.21829 31.683V31.8293C2.21829 32.5136 2.75097 33.1232 3.5122 33.1232H35.0488Z"
+										fill="#E20074" stroke="#000514" stroke-width="0.1" />
+									<path
+										d="M55.4866 2.19512V2.24512H55.5366H56.4146H58.8293C59.3849 2.24512 59.8781 2.73317 59.95 3.29584V17.8537C59.95 18.4114 59.4602 18.9012 58.9024 18.9012H51.439H51.389V18.9512V28.2439V28.2939H51.439H52.8293C53.387 28.2939 53.8768 28.7837 53.8768 29.3415V34.0976C53.8768 34.6553 53.387 35.1451 52.8293 35.1451H41.7073C41.1496 35.1451 40.6598 34.6553 40.6598 34.0976V29.2683C40.6598 28.7105 41.1496 28.2207 41.7073 28.2207H43.0976H43.1476V28.1707V17.7805V17.7801V17.7796V17.7792V17.7788V17.7784V17.7779V17.7775V17.7771V17.7767V17.7763V17.7759V17.7755V17.7751V17.7746V17.7742V17.7738V17.7734V17.773V17.7726V17.7722V17.7718V17.7715V17.7711V17.7707V17.7703V17.7699V17.7695V17.7691V17.7687V17.7684V17.768V17.7676V17.7672V17.7668V17.7665V17.7661V17.7657V17.7653V17.765V17.7646V17.7642V17.7639V17.7635V17.7632V17.7628V17.7624V17.7621V17.7617V17.7614V17.761V17.7607V17.7603V17.76V17.7596V17.7593V17.7589V17.7586V17.7582V17.7579V17.7575V17.7572V17.7569V17.7565V17.7562V17.7559V17.7555V17.7552V17.7549V17.7545V17.7542V17.7539V17.7536V17.7532V17.7529V17.7526V17.7523V17.7519V17.7516V17.7513V17.751V17.7507V17.7504V17.75V17.7497V17.7494V17.7491V17.7488V17.7485V17.7482V17.7479V17.7476V17.7473V17.747V17.7467V17.7464V17.7461V17.7458V17.7455V17.7452V17.7449V17.7446V17.7443V17.744V17.7437V17.7434V17.7432V17.7429V17.7426V17.7423V17.742V17.7417V17.7414V17.7412V17.7409V17.7406V17.7403V17.74V17.7398V17.7395V17.7392V17.7389V17.7387V17.7384V17.7381V17.7379V17.7376V17.7373V17.737V17.7368V17.7365V17.7362V17.736V17.7357V17.7355V17.7352V17.7349V17.7347V17.7344V17.7341V17.7339V17.7336V17.7334V17.7331V17.7329V17.7326V17.7323V17.7321V17.7318V17.7316V17.7313V17.7311V17.7308V17.7306V17.7303V17.7301V17.7298V17.7296V17.7294V17.7291V17.7289V17.7286V17.7284V17.7281V17.7279V17.7276V17.7274V17.7272V17.7269V17.7267V17.7264V17.7262V17.726V17.7257V17.7255V17.7253V17.725V17.7248V17.7246V17.7243V17.7241V17.7239V17.7236V17.7234V17.7232V17.7229V17.7227V17.7225V17.7222V17.722V17.7218V17.7216V17.7213V17.7211V17.7209V17.7206V17.7204V17.7202V17.72V17.7197V17.7195V17.7193V17.7191V17.7188V17.7186V17.7184V17.7182V17.718V17.7177V17.7175V17.7173V17.7171V17.7168V17.7166V17.7164V17.7162V17.716V17.7157V17.7155V17.7153V17.7151V17.7149V17.7146V17.7144V17.7142V17.714V17.7138V17.7136V17.7133V17.7131V17.7129V17.7127V17.7125V17.7123V17.712V17.7118V17.7116V17.7114V17.7112V17.711V17.7108V17.7105V17.7103V17.7101V17.7099V17.7097V17.7095V17.7092V17.709V17.7088V17.7086V17.7084V17.7082V17.708V17.7077V17.7075V17.7073V17.7071V17.7069V17.7067V17.7065V17.7062V17.706V17.7058V17.7056V17.7054V17.7052V17.705V17.7047V17.7045V17.7043V17.7041V17.7039V17.7037V17.7035V17.7032V17.703V17.7028V17.7026V17.7024V17.7022V17.7019V17.7017V17.7015V17.7013V17.7011V17.7009V17.7006V17.7004V17.7002V17.7V17.6998V17.6996V17.6993V17.6991V17.6989V17.6987V17.6985V17.6982V17.698V17.6978V17.6976V17.6974V17.6971V17.6969V17.6967V17.6965V17.6962V17.696V17.6958V17.6956V17.6953V17.6951V17.6949V17.6947V17.6944V17.6942V17.694V17.6938V17.6935V17.6933V17.6931V17.6929V17.6926V17.6924V17.6922V17.6919V17.6917V17.6915V17.6912V17.691V17.6908V17.6905V17.6903V17.6901V17.6898V17.6896V17.6894V17.6891V17.6889V17.6887V17.6884V17.6882V17.688V17.6877V17.6875V17.6872V17.687V17.6867V17.6865V17.6863V17.686V17.6858V17.6855V17.6853V17.685V17.6848V17.6845V17.6843V17.684V17.6838V17.6835V17.6833V17.683V17.6828V17.6825V17.6823V17.682V17.6818V17.6815V17.6813V17.681V17.6807V17.6805V17.6802V17.68V17.6797V17.6794V17.6792V17.6789V17.6787V17.6784V17.6781V17.6779V17.6776V17.6773V17.6771V17.6768V17.6765V17.6762V17.676V17.6757V17.6754V17.6751V17.6749V17.6746V17.6743V17.674V17.6738V17.6735V17.6732V17.6729V17.6726V17.6723V17.6721V17.6718V17.6715V17.6712V17.6709V17.6706V17.6703V17.67V17.6697V17.6694V17.6691V17.6689V17.6686V17.6683V17.668V17.6677V17.6674V17.667V17.6667V17.6664V17.6661V17.6658V17.6655V17.6652V17.6649V17.6646V17.6643V17.664V17.6636V17.6633V17.663V17.6627V17.6624V17.6621V17.6617V17.6614V17.6611V17.6608V17.6604V17.6601V17.6598V17.6594V17.6591V17.6588V17.6584V17.6581V17.6578V17.6574V17.6571V17.6568V17.6564V17.6561V17.6557V17.6554V17.655V17.6547V17.6543V17.654V17.6536V17.6533V17.6529V17.6526V17.6522V17.6518V17.6515V17.6511V17.6508V17.6504V17.65V17.6497V17.6493V17.6489V17.6485V17.6482V17.6478V17.6474V17.647V17.6467V17.6463V17.6459V17.6455V17.6451V17.6447V17.6444V17.644V17.6436V17.6432V17.6428V17.6424V17.642V17.6416V17.6412V17.6408V17.6404V17.64V17.6396V17.6392V17.6388V17.6384V17.6379V17.6375V17.6371V17.6367V17.6363V17.6358V17.6354V17.635V17.6346V17.6341V17.561C43.1476 17.5385 43.1591 17.5131 43.1789 17.4736L43.181 17.4694C43.1964 17.4386 43.2172 17.3971 43.2203 17.3527L48.2654 5.65395L48.2955 5.58415H48.2195H25.2439H25.1939V5.63415V7.97561C25.1939 8.53336 24.7041 9.02317 24.1463 9.02317H23.1951H23.1451V9.07317V12C23.1451 12.5578 22.6553 13.0476 22.0976 13.0476C21.5398 13.0476 21.05 12.5578 21.05 12V9.07317V9.02317H21H20.0488C19.491 9.02317 19.0012 8.53336 19.0012 7.97561V5.63415V5.58415H18.9512C18.7122 5.58415 18.4871 5.46445 18.3206 5.28048C18.1541 5.09646 18.05 4.852 18.05 4.60976V1.09756C18.05 0.539809 18.5398 0.05 19.0976 0.05H54.439C54.9968 0.05 55.4866 0.539809 55.4866 1.09756V2.19512ZM20.1451 3.58537V3.63537H20.1951H24.1463H49.7561H53.4146H53.4646V3.58537V3.29268V2.19512V2.14512H53.4146H20.1951H20.1451V2.19512V3.58537ZM45.1463 18.9012H45.0963V18.9512V28.3171V28.3671H45.1463H49.1707H49.2207V28.3171V18.9512V18.9012H49.1707H45.1463ZM49.4634 16.8061H49.4962L49.5093 16.776L52.1434 10.7028L52.1436 10.7025L54.2655 5.72693L54.2952 5.65732H54.2195H50.4878H50.4549L50.4419 5.68755L45.6858 16.7363L45.6557 16.8061H45.7317H49.4634ZM51.759 16.7363L51.7288 16.8061H51.8049H57.7317H57.8049H57.8549V16.7561V4.31707V4.26707H57.8049H57.1463H57.1133L57.1003 4.29745L54.759 9.78507L54.7589 9.78526L51.759 16.7363Z"
+										fill="#E20074" stroke="#000514" stroke-width="0.1" />
+								</svg>
+							</div>
+							<p class="project-left__item-text">Автомобилестроение</p>
+						</div>
+						<div class="project-left__item">
+							<div class="project-left__item-svg">
+								<svg width="40" height="29" viewBox="0 0 40 29" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M39.5 12.0833L37.4167 5.83333C37.25 5.33333 36.75 5 36.25 5H28.3333V0H0V19.1667C0 21.9167 2.25 24.1667 5 24.1667C5 23.25 5.25 22.4167 5.58333 21.6667H5C3.58333 21.6667 2.5 20.5833 2.5 19.1667V2.5H25.8333V17.5C25.8333 18.1667 26.4167 18.75 27.0833 18.75C27.75 18.75 28.3333 18.1667 28.3333 17.5V7.5H35.3333L37.1667 12.9167C37.4167 13.5833 37.5 14.3333 37.5 15V24.1667H40V15C40 14 39.8333 13 39.5 12.0833ZM27.5 24.1667C27.5 21.8333 29.3333 20 31.6667 20C34 20 35.8333 21.8333 35.8333 24.1667C35.8333 26.5 34 28.3333 31.6667 28.3333C29.3333 28.3333 27.5 26.5 27.5 24.1667ZM30 24.1667C30 25.0833 30.75 25.8333 31.6667 25.8333C32.5833 25.8333 33.3333 25.0833 33.3333 24.1667C33.3333 23.25 32.5833 22.5 31.6667 22.5C30.75 22.5 30 23.25 30 24.1667ZM30 9.16663H34.1667L35.5833 13.4166C35.75 13.9166 35.8333 14.5 35.8333 15V15.8333H30V9.16663ZM16.6673 24.1666H25.834C25.834 23.25 26.084 22.4166 26.4173 21.6666H16.084C16.5007 22.4166 16.6673 23.25 16.6673 24.1666ZM10.8333 20C8.5 20 6.66667 21.8333 6.66667 24.1667C6.66667 26.5 8.5 28.3333 10.8333 28.3333C13.1667 28.3333 15 26.5 15 24.1667C15 21.8333 13.1667 20 10.8333 20ZM10.833 25.8333C9.91634 25.8333 9.16634 25.0833 9.16634 24.1667C9.16634 23.25 9.91634 22.5 10.833 22.5C11.7497 22.5 12.4997 23.25 12.4997 24.1667C12.4997 25.0833 11.7497 25.8333 10.833 25.8333Z"
+										fill="#E20074" />
+								</svg>
+							</div>
+							<p class="project-left__item-text">Логистика и транспорт</p>
+						</div>
+						<div class="project-left__item">
+							<div class="project-left__item-svg">
+								<svg width="42" height="42" viewBox="0 0 42 42" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M12.2188 2.81611L12.2188 2.81611C14.7756 1.59772 17.9754 0.9 21 0.9C31.9376 0.9 41.1 10.0783 41.1 21C41.1 31.9376 31.9217 41.1 21 41.1C10.0624 41.1 0.9 31.9217 0.9 21C0.9 16.0352 2.72772 11.1337 5.91705 7.55135L5.91708 7.55131C6.29864 7.12311 6.95515 7.0845 7.38387 7.46626C7.81244 7.84777 7.85057 8.5045 7.46896 8.93307M12.2188 2.81611L7.39427 8.86657M12.2188 2.81611C11.7009 3.06296 11.4809 3.683 11.7278 4.20096M12.2188 2.81611L11.7278 4.20096M7.46896 8.93307L7.39427 8.86657M7.46896 8.93307C7.46896 8.93307 7.46896 8.93307 7.46896 8.93307L7.39427 8.86657M7.46896 8.93307C4.61572 12.138 2.97793 16.5365 2.97793 21C2.97793 30.768 11.232 39.0221 21 39.0221C30.768 39.0221 39.0221 30.768 39.0221 21C39.0221 11.232 30.768 2.97793 21 2.97793C18.2728 2.97793 15.397 3.60335 13.1126 4.69196M7.39427 8.86657C4.52404 12.0906 2.87793 16.5131 2.87793 21C2.87793 30.8232 11.1768 39.1221 21 39.1221C30.8232 39.1221 39.1221 30.8232 39.1221 21C39.1221 11.1768 30.8232 2.87793 21 2.87793C18.2591 2.87793 15.3685 3.5062 13.0696 4.60169M13.1126 4.69196L13.0696 4.60169M13.1126 4.69196C12.5944 4.93903 11.9745 4.71885 11.7278 4.20096M13.1126 4.69196C13.1126 4.69196 13.1126 4.69196 13.1126 4.69196L13.0696 4.60169M13.0696 4.60169L11.7278 4.20096"
+										fill="#E20074" stroke="#E20074" stroke-width="0.2" />
+									<path
+										d="M30.1295 17.0708H24.6286V11.5699C24.6286 11.136 24.2767 10.7841 23.8427 10.7841H17.556C17.122 10.7841 16.7701 11.136 16.7701 11.5699V17.0708H11.2692C10.8353 17.0708 10.4834 17.4227 10.4834 17.8566V24.1434C10.4834 24.5773 10.8353 24.9292 11.2692 24.9292H16.7701V30.4301C16.7701 30.8641 17.122 31.216 17.556 31.216H23.8427C24.2767 31.216 24.6286 30.8641 24.6286 30.4301V24.9292H30.1295C30.5634 24.9292 30.9153 24.5773 30.9153 24.1434V17.8566C30.9153 17.4227 30.5634 17.0708 30.1295 17.0708Z"
+										fill="#E20074" />
+								</svg>
+							</div>
+							<p class="project-left__item-text">Здравоохранение</p>
+						</div>
+						<div class="project-left__item">
+							<div class="project-left__item-svg">
+								<svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path d="M38 8.14298L19 0L0 8.14298V10.857H38V8.14298Z" fill="#E20074" />
+									<path
+										d="M37 33.9285H1C0.447715 33.9285 0 34.3762 0 34.9285V37C0 37.5522 0.447716 38 1 38H37C37.5523 38 38 37.5522 38 37V34.9285C38 34.3762 37.5523 33.9285 37 33.9285Z"
+										fill="#E20074" />
+									<path
+										d="M25.6498 29.7895V14.9965C25.6498 14.2095 25.0118 13.5715 24.2248 13.5715C23.4378 13.5715 22.7998 14.2095 22.7998 14.9965V29.7895C22.7998 30.5765 23.4378 31.2145 24.2248 31.2145C25.0118 31.2145 25.6498 30.5765 25.6498 29.7895Z"
+										fill="#E20074" />
+									<path
+										d="M35.1498 29.7895V14.9965C35.1498 14.2095 34.5118 13.5715 33.7248 13.5715C32.9378 13.5715 32.2998 14.2095 32.2998 14.9965V29.7895C32.2998 30.5765 32.9378 31.2145 33.7248 31.2145C34.5118 31.2145 35.1498 30.5765 35.1498 29.7895Z"
+										fill="#E20074" />
+									<path
+										d="M16.1498 29.7895V14.9965C16.1498 14.2095 15.5118 13.5715 14.7248 13.5715C13.9378 13.5715 13.2998 14.2095 13.2998 14.9965V29.7895C13.2998 30.5765 13.9378 31.2145 14.7248 31.2145C15.5118 31.2145 16.1498 30.5765 16.1498 29.7895Z"
+										fill="#E20074" />
+									<path
+										d="M6.6498 29.7895V14.9965C6.6498 14.2095 6.01181 13.5715 5.2248 13.5715C4.4378 13.5715 3.7998 14.2095 3.7998 14.9965V29.7895C3.7998 30.5765 4.4378 31.2145 5.2248 31.2145C6.01181 31.2145 6.6498 30.5765 6.6498 29.7895Z"
+										fill="#E20074" />
+								</svg>
+							</div>
+							<p class="project-left__item-text">Банки и финансы</p>
+						</div>
+					</div>
+					<div class="project-right">
+						<div class="project-right__col1">
+							<p class="project-right__col-item">Cloud</p>
+							<p class="project-right__col-item">AR, VR</p>
+							<p class="project-right__col-item">IoT</p>
+							<p class="project-right__col-item">Blockchain</p>
+							<p class="project-right__col-item">Big Data</p>
+							<p class="project-right__col-item">AI, Machine learning</p>
+							<p class="project-right__col-item">Penetration testing</p>
+							<p class="project-right__col-item">Robotics</p>
+							<p class="project-right__col-item">Autonomous driving</p>
+							<p class="project-right__col-item">SAP</p>
+							<p class="project-right__col-item">Fintech</p>
+						</div>
+						<div class="project-right__col2">
+							<p class="project-right__col-item">Agile</p>
+							<p class="project-right__col-item">DevOps</p>
+							<p class="project-right__col-item">Microservices</p>
+							<p class="project-right__col-item">Highload</p>
+							<a href="#" class="simple-link project-right__col2-link">Подробнее
+								<svg width="21" height="16" viewBox="0 0 21 16" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path class="simple-link--opacity"
+										d="M20.7071 8.70711C21.0976 8.31658 21.0976 7.68342 20.7071 7.29289L14.3431 0.928932C13.9526 0.538408 13.3195 0.538408 12.9289 0.928932C12.5384 1.31946 12.5384 1.95262 12.9289 2.34315L18.5858 8L12.9289 13.6569C12.5384 14.0474 12.5384 14.6805 12.9289 15.0711C13.3195 15.4616 13.9526 15.4616 14.3431 15.0711L20.7071 8.70711ZM0 9H20V7H0V9Z"
+										fill="#E20074" />
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="history container">
+			<div class="section-pl">
+				<div class="history__inner">
+					<div class="history-title">
+						<p class="title">Deutsche Telekom<span class="purple-text">IT Solutions</span></p>
+					</div>
+					<div class="history-text">
+						<p class="history-text__item history-text__item--white">
+							Deutsche Telekom IT Solutions – стратегическое ИТ подразделение Deutsche Telekom, крупнейшей
+							телекоммуникационной компании в Европе
+						</p>
+						<p class="history-text__item">
+							История Deutsche Telekom IT Solutions
+							в России началась в 1995 году c открытия центра разработки для внутренних проектов Deutsche
+							Telekom и других крупных заказчиков (известные автопроизводители, транспортные,
+							логистические
+							компании и т.д.).
+							До 2020 года российское подразделение работало под брендом T-Systems.
+						</p>
+						<p class="history-text__item">
+							Мы ценим творческую свободу и ищем тех, кто может мыслить широко и готов превращать идеи в
+							высококачественные продукты и услуги. Мы верим в важность вдохновения и обмена идеями
+							и предоставляем для этого передовые инструменты и технологии.
+						</p>
+						<a href="#" class="btn btn-history">Присоединиться к команде</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="team container">
+			<div class="section-pl">
+				<p class="title">Станьте частью большой<span class="purple-text">международной команды</span></p>
+				<div class="team__inner">
+					<div class="team-row">
+						<div class="team-row__item">
+							<p class="team-row__item-top">2 000</p>
+							<p class="team-row__item-bottom">сотрудников в России</p>
+						</div>
+						<div class="team-row__item">
+							<p class="team-row__item-top">210 000</p>
+							<p class="team-row__item-bottom">в офисах по всему миру</p>
+						</div>
+						<div class="team-row__item">
+							<p class="team-row__item-top">3 офиса</p>
+							<p class="team-row__item-bottom">Работаем в Санкт-Петербурге, Воронеже и Москве</p>
+						</div>
+					</div>
+					<div class="team-row">
+						<div class="team-row__left">
+							<div class="team-row__left-item">
+								<p class="team-row__item-top"><span class="purple-symb">></span>  40 офисов</p>
+								<p class="team-row__item-bottom">в Европе, Северной и Южной Америке, Азии и Африке</p>
+							</div>
+							<div class="team-row__left-item">
+								<p class="team-row__item-top">Всегда на связи с другими офисами: </p>
+								<p class="team-row__item-bottom">Работаем в распределенных командах, ездим в международные командировки</p>
+							</div>
+						</div>
+						<div class="team-row__right">
+							<img src="/img/bg/bg-4.png" alt="">
+						</div>
+					</div>
+					<div class="team-row">
+						<div class="team-row__item">
+							<p class="team-row__item-top"><span class="purple-symb">></span>  150 проектов</p>
+							<p class="team-row__item-bottom">Для крупнейших мировых брендов разработаны российским подразделением</p>
+						</div>
+						<div class="team-row__item">
+							<p class="team-row__item-top">Ежедневно используем английский язык</p>
+							<p class="team-row__item-bottom">при работе над проектами</p>
+						</div>
+						<div class="team-row__item">
+							<p class="team-row__item-top">Европейская</p>
+							<p class="team-row__item-bottom">корпоративная культура</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
 	<footer></footer>
 
-	<h3>Проверка вызова модального окна</h3>
+	<!-- <h3>Проверка вызова модального окна</h3>
 	<button class="openCallback">Открыть callback</button>
 	<button class="openMenu">Открыть menu</button>
 	<br>
@@ -33,37 +302,74 @@
 			<input name="tel" id="tel" type="tel" class="" required data-rule-required="true" data-rule-minlength="10">
 		</div>
 		<button class="" type="submit">Отправить</button>
-	</form>
+	</form> -->
 
 	<!-- Модальные окна -->
 	<div class="modal-wrapper hidden animation">
 		<div class="modal-wrapper__callback hidden animation">
 			<button class="modal-wrapper__close">
 				<svg width="25" height="25" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<line x1="26.713" y1="9.83421" x2="10.803" y2="25.7441" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></line>
-					<line x1="26.5918" y1="25.7129" x2="11" y2="10.1212" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></line>
+					<line x1="26.713" y1="9.83421" x2="10.803" y2="25.7441" stroke="#C4C4C4" stroke-width="3"
+						stroke-linecap="round" stroke-linejoin="round"></line>
+					<line x1="26.5918" y1="25.7129" x2="11" y2="10.1212" stroke="#C4C4C4" stroke-width="3"
+						stroke-linecap="round" stroke-linejoin="round"></line>
 				</svg>
 			</button>
 			<div class="modal-wrapper__callback-body">
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti minus placeat sequi esse sed perspiciatis illum itaque at ipsa, eveniet excepturi! Atque, provident fuga nobis excepturi dignissimos dicta aut labore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nobis autem cumque, corrupti ipsam deserunt aspernatur odit distinctio neque minus saepe eum tempora ab et magnam earum praesentium delectus voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et exercitationem animi dolorem odio provident. Eius ipsa ipsam repellendus id non! Inventore temporibus ex quibusdam reiciendis optio maiores natus ullam sit! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde deleniti tempore quos cupiditate! Nobis quo nulla enim ipsum. Qui in minus voluptatem itaque numquam corporis rerum eveniet repudiandae illo dolorem! Lorem ipsum dolor sit amet consectetur adipisicing elit. At ab culpa tempora odio maxime, repudiandae aliquid, praesentium neque sunt, libero numquam? Corrupti architecto deleniti rerum necessitatibus suscipit unde, aut aliquid! Lorem ipsum, dolor sit </p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti minus placeat sequi esse sed
+					perspiciatis illum itaque at ipsa, eveniet excepturi! Atque, provident fuga nobis excepturi
+					dignissimos dicta aut labore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nobis
+					autem cumque, corrupti ipsam deserunt aspernatur odit distinctio neque minus saepe eum tempora ab et
+					magnam earum praesentium delectus voluptate. Lorem ipsum dolor sit amet consectetur adipisicing
+					elit. Et exercitationem animi dolorem odio provident. Eius ipsa ipsam repellendus id non! Inventore
+					temporibus ex quibusdam reiciendis optio maiores natus ullam sit! Lorem ipsum, dolor sit amet
+					consectetur adipisicing elit. Unde deleniti tempore quos cupiditate! Nobis quo nulla enim ipsum. Qui
+					in minus voluptatem itaque numquam corporis rerum eveniet repudiandae illo dolorem! Lorem ipsum
+					dolor sit amet consectetur adipisicing elit. At ab culpa tempora odio maxime, repudiandae aliquid,
+					praesentium neque sunt, libero numquam? Corrupti architecto deleniti rerum necessitatibus suscipit
+					unde, aut aliquid! Lorem ipsum, dolor sit </p>
 			</div>
 		</div>
 		<div class="modal-wrapper__left-menu hidden animation">
 			<div class="modal-wrapper__left-body">
-				<button class="modal-wrapper__close"><svg width="25" height="25" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<line x1="26.713" y1="9.83421" x2="10.803" y2="25.7441" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></line>
-					<line x1="26.5918" y1="25.7129" x2="11" y2="10.1212" stroke="#C4C4C4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></line>
+				<button class="modal-wrapper__close modal-wrapper__close--leftmenu"><svg width="25" height="25"
+						viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<line x1="26.713" y1="9.83421" x2="10.803" y2="25.7441" stroke="#C4C4C4" stroke-width="3"
+							stroke-linecap="round" stroke-linejoin="round"></line>
+						<line x1="26.5918" y1="25.7129" x2="11" y2="10.1212" stroke="#C4C4C4" stroke-width="3"
+							stroke-linecap="round" stroke-linejoin="round"></line>
 					</svg>
 				</button>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti minus placeat sequi esse sed perspiciatis illum itaque at ipsa, eveniet excepturi! Atque, provident fuga nobis excepturi dignissimos dicta aut labore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nobis autem cumque, corrupti ipsam deserunt aspernatur odit distinctio neque minus saepe eum tempora ab et magnam eaet consectetur adipisicing elit. At ab culpa tempora odio maxime, repudiandae aliquid, praesentium neque sunt, libero numquam? Corrupti architecto deleniti rerum necessitatibus suscipit unde, aut aliquid! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni eveniet reprehenderit rerum dolor unde. Quaerat voluptas quibusdam ab minus, similique distinctio ipsa unde maxime eligendi laboriosam, officiis cupiditate omnis aliquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ipsa unde esse provident impedit eos quos veniam placeat maiores? Harum dolores molestiae nobis? Temporibus voluptatem minus, repellat voluptatibus perspiciatis ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, quam cum fuga aspernatur non atque asperiores id consequuntur ducimus distinctio ad, modi consequatur vitae odit dicta a quibusdam inventore voluptates. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel aperiam velit enim beatae libero maiores dignissimos rem laudantium delectus distinctio sapiente sunt at tempora mollitia fugit, dicta dolores praesentium voluptatibus.</p>
+				<div class="header-bottom__inner header-bottom__inner--mobile">
+					<nav class="header-bottom__menu">
+						<a class="header-bottom__menu-link" href="#">О нас</a>
+						<a class="header-bottom__menu-link" href="#">Решения</a>
+						<a class="header-bottom__menu-link" href="#">Карьера</a>
+						<a class="header-bottom__menu-link" href="#">Контакты</a>
+					</nav>
+					<div class="header-bottom__buttons">
+						<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								d="M17.3434 1.875C13.301 1.87383 9.59767 4.13402 7.75047 7.72963C5.90328 11.3253 6.22265 15.6521 8.57776 18.9375C9.26048 19.886 10.1008 20.7105 11.0621 21.375C12.8793 22.7206 15.0822 23.4439 17.3434 23.4375C23.2977 23.4375 28.1246 18.6106 28.1246 12.6562C28.1246 6.70193 23.2977 1.875 17.3434 1.875ZM17.3434 3.28125C22.5211 3.28125 26.7184 7.47858 26.7184 12.6562C26.7184 17.8339 22.5211 22.0312 17.3434 22.0312C15.3857 22.0333 13.4793 21.4055 11.9059 20.2406H11.8497C11.0249 19.67 10.3049 18.9611 9.72154 18.1453C7.65791 15.2881 7.37118 11.5148 8.97937 8.37857C10.5876 5.24231 13.8189 3.27303 17.3434 3.28125ZM2.29653 25.7203L8.14184 19.8797C8.72491 20.6193 9.39899 21.2823 10.1481 21.8531L4.28872 27.7078L4.2184 27.7781C3.65016 28.3088 2.75927 28.2784 2.22856 27.7102C1.69785 27.1419 1.72828 26.251 2.29653 25.7203Z"
+								fill="white" />
+						</svg>
+						<div class="header-bottom__lang">
+							<a hrea href="#"" class=" header-bottom__lang-item header-bottom__lang-item--active">RU</a>
+							<a hrea href="#"" class=" header-bottom__lang-item">EN</a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="modal-wrapper__bg"></div>
 	</div>
-	
-	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="   crossorigin="anonymous"></script>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"
+		integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 	<script src="./libs/jquery_validate/jquery.validate.min.js"></script>
 	<script src="./libs/jquery-maskedinput/jquery.maskedinput.js"></script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
+
 </html>

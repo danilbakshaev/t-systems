@@ -1,5 +1,10 @@
 $(function() {
 
+  $('.main-slider__inner').slick({
+    arrows: false,
+    dots: true
+  });
+
 	//Валидатор форм и маска для форм
 	const offerFormModal = $('.offer-form-modal')
 	offerFormModal.submit(function(e) {
@@ -48,29 +53,29 @@ $(function() {
 (function() {
   
   //Вызов окна колбека
-  openCallback = document.querySelector('.openCallback');
-  callbackModal = document.querySelector('.modal-wrapper__callback');
+  // openCallback = document.querySelector('.openCallback');
+  // callbackModal = document.querySelector('.modal-wrapper__callback');
 
-  openCallback.addEventListener('click', function () {
-    openBaseModal();
-    callbackModal.classList.remove('hidden');
-    setTimeout(function () {
-      callbackModal.classList.remove('animation');
-    }, 20);
-  })
+  // openCallback.addEventListener('click', function () {
+  //   openBaseModal();
+  //   callbackModal.classList.remove('hidden');
+  //   setTimeout(function () {
+  //     callbackModal.classList.remove('animation');
+  //   }, 20);
+  // })
 
-  function closecallbackPopup() {
-    if (!callbackModal.classList.contains('hidden')) {
-      callbackModal.classList.add('animation');    
-      callbackModal.addEventListener('transitionend', function(e) {
-        callbackModal.classList.add('hidden');
-      }, {
-        capture: false,
-        once: true,
-        passive: false
-      });
-    }
-  };
+  // function closecallbackPopup() {
+  //   if (!callbackModal.classList.contains('hidden')) {
+  //     callbackModal.classList.add('animation');    
+  //     callbackModal.addEventListener('transitionend', function(e) {
+  //       callbackModal.classList.add('hidden');
+  //     }, {
+  //       capture: false,
+  //       once: true,
+  //       passive: false
+  //     });
+  //   }
+  // };
 
   //Вызов окна колбека
   openLeftMenu = document.querySelector('.openMenu');
@@ -99,7 +104,7 @@ $(function() {
   };
 
   function closeAllModal() {
-    closecallbackPopup();
+    // closecallbackPopup();
     closeleftMenuModal();
     closeBaseModal();
   };
