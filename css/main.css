@@ -380,80 +380,8 @@ template {
 
 @font-face {
   font-family: "teleneo";
-  src: url('../fonts/teleNeo/teleneo-bold-webfont.woff2') format('woff2'),
-    url('../fonts/teleNeo/teleneo-bold-webfont.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
-
-}
-
-/* @font-face {
-  font-family: "teleneo";
-  src: url('../fonts/teleNeo/teleneo-bolditalic-webfont.woff2') format('woff2'),
-    url('../fonts/teleNeo/teleneo-bolditalic-webfont.woff') format('woff');
-  font-weight: 700;
-  font-style: italic;
-
-} */
-
-@font-face {
-  font-family: "teleneo";
-  src: url('../fonts/teleNeo/teleneo-extrabold-webfont.woff2') format('woff2'),
-    url('../fonts/teleNeo/teleneo-extrabold-webfont.woff') format('woff');
-  font-weight: 800;
-  font-style: normal;
-
-}
-
-/* @font-face {
-  font-family: "teleneo";
-  src: url('../fonts/teleNeo/teleneo-extrabolditalic-webfont.woff2') format('woff2'),
-    url('../fonts/teleNeo/teleneo-extrabolditalic-webfont.woff') format('woff');
-  font-weight: 800;
-  font-style: italic;
-
-} */
-
-@font-face {
-  font-family: "teleneo";
-  src: url('../fonts/teleNeo/teleneo-medium-webfont.woff2') format('woff2'),
-    url('../fonts/teleNeo/teleneo-medium-webfont.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-
-}
-
-/* @font-face {
-  font-family: "teleneo";
-  src: url('../fonts/teleNeo/teleneo-mediumitalic-webfont.woff2') format('woff2'),
-    url('../fonts/teleNeo/teleneo-mediumitalic-webfont.woff') format('woff');
-  font-weight: 500;
-  font-style: italic;
-
-} */
-
-@font-face {
-  font-family: "teleneo";
-  src: url('../fonts/teleNeo/teleneo-regular-webfont.woff2') format('woff2'),
-    url('../fonts/teleNeo/teleneo-regular-webfont.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-
-}
-
-/* @font-face {
-  font-family: "teleneo";
-  src: url('../fonts/teleNeo/teleneo-regularitalic-webfont.woff2') format('woff2'),
-    url('../fonts/teleNeo/teleneo-regularitalic-webfont.woff') format('woff');
-  font-weight: 400;
-  font-style: italic;
-
-} */
-
-@font-face {
-  font-family: "teleneo";
-  src: url('../fonts/teleNeo/teleneo-thin-webfont.woff2') format('woff2'),
-    url('../fonts/teleNeo/teleneo-thin-webfont.woff') format('woff');
+  src: url('../fonts/teleneo/teleneo-thin-webfont.woff2') format('woff2'),
+    url('../fonts/teleneo/teleneo-thin-webfont.woff') format('woff');
   font-weight: 200;
   font-style: normal;
 
@@ -461,12 +389,87 @@ template {
 
 /* @font-face {
   font-family: "teleneo";
-  src: url('../fonts/teleNeo/teleneo-thinitalic-webfont.woff2') format('woff2'),
-    url('../fonts/teleNeo/teleneo-thinitalic-webfont.woff') format('woff');
+  src: url('../fonts/teleneo/teleneo-thinitalic-webfont.woff2') format('woff2'),
+    url('../fonts/teleneo/teleneo-thinitalic-webfont.woff') format('woff');
   font-weight: 200;
   font-style: italic;
 
 } */
+
+@font-face {
+  font-family: "teleneo";
+  src: url('../fonts/teleneo/teleneo-regular-webfont.woff2') format('woff2'),
+    url('../fonts/teleneo/teleneo-regular-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+/* @font-face {
+  font-family: "teleneo";
+  src: url('../fonts/teleneo/teleneo-regularitalic-webfont.woff2') format('woff2'),
+    url('../fonts/teleneo/teleneo-regularitalic-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+
+} */
+
+@font-face {
+  font-family: "teleneo";
+  src: url('../fonts/teleneo/teleneo-medium-webfont.woff2') format('woff2'),
+    url('../fonts/teleneo/teleneo-medium-webfont.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+
+}
+
+/* @font-face {
+  font-family: "teleneo";
+  src: url('../fonts/teleneo/teleneo-mediumitalic-webfont.woff2') format('woff2'),
+    url('../fonts/teleneo/teleneo-mediumitalic-webfont.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+
+} */
+
+@font-face {
+  font-family: "teleneo";
+  src: url('../fonts/teleneo/teleneo-bold-webfont.woff2') format('woff2'),
+    url('../fonts/teleneo/teleneo-bold-webfont.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+
+}
+
+/* @font-face {
+  font-family: "teleneo";
+  src: url('../fonts/teleneo/teleneo-bolditalic-webfont.woff2') format('woff2'),
+    url('../fonts/teleneo/teleneo-bolditalic-webfont.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+
+} */
+
+@font-face {
+  font-family: "teleneo";
+  src: url('../fonts/teleneo/teleneo-extrabold-webfont.woff2') format('woff2'),
+    url('../fonts/teleneo/teleneo-extrabold-webfont.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+
+}
+
+/* @font-face {
+  font-family: "teleneo";
+  src: url('../fonts/teleneo/teleneo-extrabolditalic-webfont.woff2') format('woff2'),
+    url('../fonts/teleneo/teleneo-extrabolditalic-webfont.woff') format('woff');
+  font-weight: 800;
+  font-style: italic;
+
+} */
+
+
+
 
 body {
   font-size: 16px;
@@ -770,9 +773,10 @@ main {
 }
 
 /* main-slider */
-.section-pl {
+.section-wrap {
   max-width: 1123px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .main-slider {
@@ -873,15 +877,9 @@ main {
   outline: none;
 }
 
-@media screen and (max-width: 1370px) {
-  .section-pl {
-    padding-left: 0;
-  }
-}
-
 @media screen and (max-width: 992px) {
   .main-slider {
-    padding: 42px 0;
+    padding: 60px 0;
   }
 
   .title {
@@ -1006,7 +1004,7 @@ main {
 
 @media screen and (max-width: 992px) {
   .project {
-    padding-bottom: 42px;
+    padding-bottom: 60px;
   }
 
   .project__inner {
@@ -1094,6 +1092,10 @@ main {
 }
 
 @media screen and (max-width: 992px) {
+  .history {
+    padding-bottom: 60px;
+  }
+
   .history__inner {
     flex-direction: column;
   }
@@ -1124,7 +1126,7 @@ main {
 
 .conatiner {}
 
-.section-pl {}
+.section-wrap {}
 
 .title {}
 
@@ -1185,12 +1187,13 @@ main {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    padding-bottom: 42px;
+    padding-bottom: 60px;
   }
 
   .team-row {
     flex-direction: column;
     margin-top: 0;
+    margin-right: 0;
   }
 
   .team-row__item {
@@ -1213,6 +1216,7 @@ main {
   .team-row__item-top {
     font-size: 36px;
     margin: 0;
+    line-height: normal;
   }
 
   .team-row__left-item {
@@ -1223,5 +1227,429 @@ main {
 
   .team-row__item-bottom {
     font-size: 24px;
+  }
+}
+
+/* advantage */
+
+.advantage {
+  padding-bottom: 113px;
+  background-image: url(/img/bg/bg-5.png);
+  background-size: auto;
+  background-position: top 22% left 10%;
+  background-repeat: no-repeat;
+}
+
+.advantage__inner {
+  display: flex;
+}
+
+.advantage-title {}
+
+.title {}
+
+.purple-text {}
+
+.advantage-text {
+  margin-left: 142px;
+}
+
+.advantage-text__item {
+  font-size: 30px;
+  line-height: 150%;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 60px 0;
+  position: relative;
+  z-index: 2;
+}
+
+.advantage-text__item--white {
+  color: rgba(255, 255, 255, 1);
+}
+
+.advantage-text__item--block {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 40px;
+}
+
+.advantage-text__item-num {
+  position: absolute;
+  z-index: -1;
+  top: -26px;
+  right: -34px;
+}
+
+.btn-advantage {
+  width: 330px;
+  height: 50px;
+}
+
+.advantage-text__item:first-child {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 1240px) {
+  .advantage-text {
+    margin-left: 72px;
+  }
+
+  .advantage-text__item-num {
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .advantage-text__item-num {
+    right: 33px;
+    top: 0;
+  }
+}
+
+
+@media screen and (max-width: 992px) {
+  .advantage {
+    padding-bottom: 60px;
+  }
+
+  .advantage__inner {
+    flex-direction: column;
+  }
+
+  .advantage-text__item {
+    font-size: 24px;
+    margin: 25px 0;
+  }
+
+  .advantage-text__item--block {
+    font-size: 36px;
+  }
+
+  .advantage-text {
+    margin-left: 0;
+  }
+
+  .btn-advantage {
+    width: calc(100% - 40px);
+  }
+}
+
+/* career */
+
+.career {
+  padding-bottom: 180px;
+}
+
+.career-top {}
+
+.career-middle {
+  margin: 115px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+
+.career-content {
+  width: 43%;
+  padding: 100px 0;
+  margin-left: 140px;
+}
+
+.career-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 46px;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.career-text {
+  font-size: 26px;
+  line-height: 130%;
+  color: #FFFFFF;
+  margin: 34px 0 46px;
+}
+
+.career-buttons {
+  display: flex;
+}
+
+.career-btn {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 21px;
+  text-decoration: none;
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 13px 10px;
+  text-align: center;
+  transition: all .2s linear;
+}
+
+.career-btn:hover {
+  background: #fff;
+  color: #E20074;
+}
+
+.career-btn--black {
+  border: 2px solid transparent;
+  background: #262626;
+  padding: 13px 9px;
+  margin-left: 20px;
+}
+
+.career-bottom__inner {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 70px;
+  margin-right: -25px;
+}
+
+.career-bottom__item {
+  width: calc(25% - 25px);
+  margin-right: 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  position: relative;
+}
+
+.career-bottom__item-text {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 130%;
+  color: #FFFFFF;
+  position: absolute;
+  bottom: -7px;
+  left: 20px;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: all .2s linear;
+  text-decoration-skip-ink: none;
+}
+
+.career-bottom__item:hover .career-bottom__item-text {
+  text-decoration-color: #fff;
+}
+
+
+@media screen and (max-width: 1240px) {
+  .career-content {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .career-bottom__item-text {
+    font-size: 23px;
+    left: 10px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .career {
+    padding-bottom: 60px;
+  }
+
+  .career-content {
+    padding: 35px 0;
+  }
+
+  .career-buttons {
+    flex-direction: column;
+  }
+
+  .career-btn--black {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .career-title {
+    font-size: 36px;
+  }
+
+  .career-text {
+    font-size: 24px;
+  }
+
+  .career-bottom__inner {
+    margin-top: 40px;
+  }
+
+  .career-bottom__item {
+    width: calc(50% - 25px);
+    margin-bottom: 25px;
+  }
+
+  .career-middle {
+    margin: 60px 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .career-bottom__inner {
+    margin-right: 0;
+  }
+
+  .career-bottom__item {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+/* social */
+
+.social {
+  padding-bottom: 197px;
+}
+
+.social-inner {
+  display: flex;
+}
+
+.social-left {
+  width: 56%;
+  margin-right: 26px;
+}
+
+.title {}
+
+.purple-text__nob {
+  display: unset;
+}
+
+.subtitle--social {
+  margin: 35px 0 6px;
+}
+
+.social-links {
+  align-items: center;
+  display: flex;
+}
+
+.social-link {
+  text-decoration: none;
+  margin-right: 55px;
+}
+
+.social-link:last-child {
+  margin-right: 0;
+}
+
+.social-hover {
+  transition: all .2s linear;
+}
+
+.social-link:hover .social-hover {
+  fill: #E20074;
+}
+
+.social-right {
+  width: 44%;
+}
+
+
+@media screen and (max-width: 992px) {
+  .social-inner {
+    justify-content: center;
+    position: relative;
+  }
+
+  .social-left {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .social-right {
+    position: absolute;
+    z-index: 0;
+    top: -60px;
+    width: 35%;
+  }
+
+  .social {
+    padding-bottom: 60px;
+  }
+
+  .social-links {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .social-link {
+    margin-right: 20px;
+  }
+}
+
+/* footer */
+
+footer {
+  margin-top: -16px;
+  background: #000514;
+}
+
+.footer-inner {
+  padding: 32px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-text {
+  margin: 0;
+  font-size: 24px;
+  line-height: 130%;
+  color: #FFFFFF;
+}
+
+.footer-links {}
+
+.footer-link {
+  font-size: 24px;
+  line-height: 130%;
+  color: #FFFFFF;
+  text-decoration-color: transparent;
+  text-decoration-skip-ink: none;
+  transition: all .2s linear;
+  margin-right: 35px;
+}
+
+.footer-link:nth-child(2n) {
+  position: relative;
+}
+
+.footer-link:nth-child(2n)::before {
+  content: '|';
+  position: absolute;
+  left: -17px;
+}
+
+.footer-link:nth-child(2n)::after {
+  content: '|';
+  position: absolute;
+  right: -17px;
+}
+
+.footer-link:last-child {
+  margin-right: 0;
+}
+
+.footer-link:hover {
+  text-decoration-color: #fff;
+}
+
+
+@media screen and (max-width: 1080px) {
+  .footer-inner {
+    flex-direction: column;
+  }
+
+  .footer-links {
+    margin-top: 20px;
   }
 }
