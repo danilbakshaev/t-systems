@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'TeleNeo';
+    src: url('TeleNeo-ExtraBold.woff2') format('woff2'),
+        url('TeleNeo-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TeleNeo';
+    src: url('TeleNeo-ThinItalic.woff2') format('woff2'),
+        url('TeleNeo-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TeleNeo';
+    src: url('TeleNeo-BoldItalic.woff2') format('woff2'),
+        url('TeleNeo-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TeleNeo';
+    src: url('TeleNeo-Bold.woff2') format('woff2'),
+        url('TeleNeo-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TeleNeo';
+    src: url('TeleNeo-Medium.woff2') format('woff2'),
+        url('TeleNeo-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TeleNeo';
+    src: url('TeleNeo-RegularItalic.woff2') format('woff2'),
+        url('TeleNeo-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TeleNeo';
+    src: url('TeleNeo-Thin.woff2') format('woff2'),
+        url('TeleNeo-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TeleNeo';
+    src: url('TeleNeo-ExtraBoldItalic.woff2') format('woff2'),
+        url('TeleNeo-ExtraBoldItalic.woff') format('woff');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TeleNeo';
+    src: url('TeleNeo-MediumItalic.woff2') format('woff2'),
+        url('TeleNeo-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TeleNeo';
+    src: url('TeleNeo-Regular.woff2') format('woff2'),
+        url('TeleNeo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

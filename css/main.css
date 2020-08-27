@@ -378,94 +378,41 @@ template {
   display: none;
 }
 
-@font-face {
+/* @font-face {
   font-family: "teleneo";
   src: url('../fonts/teleneo/teleneo-thin-webfont.woff2') format('woff2'),
     url('../fonts/teleneo/teleneo-thin-webfont.woff') format('woff');
   font-weight: 200;
-  font-style: normal;
-
 }
-
-/* @font-face {
-  font-family: "teleneo";
-  src: url('../fonts/teleneo/teleneo-thinitalic-webfont.woff2') format('woff2'),
-    url('../fonts/teleneo/teleneo-thinitalic-webfont.woff') format('woff');
-  font-weight: 200;
-  font-style: italic;
-
-} */
 
 @font-face {
   font-family: "teleneo";
   src: url('../fonts/teleneo/teleneo-regular-webfont.woff2') format('woff2'),
     url('../fonts/teleneo/teleneo-regular-webfont.woff') format('woff');
   font-weight: 400;
-  font-style: normal;
-
 }
 
-/* @font-face {
-  font-family: "teleneo";
-  src: url('../fonts/teleneo/teleneo-regularitalic-webfont.woff2') format('woff2'),
-    url('../fonts/teleneo/teleneo-regularitalic-webfont.woff') format('woff');
-  font-weight: 400;
-  font-style: italic;
-
-} */
 
 @font-face {
   font-family: "teleneo";
   src: url('../fonts/teleneo/teleneo-medium-webfont.woff2') format('woff2'),
     url('../fonts/teleneo/teleneo-medium-webfont.woff') format('woff');
   font-weight: 500;
-  font-style: normal;
-
 }
 
-/* @font-face {
-  font-family: "teleneo";
-  src: url('../fonts/teleneo/teleneo-mediumitalic-webfont.woff2') format('woff2'),
-    url('../fonts/teleneo/teleneo-mediumitalic-webfont.woff') format('woff');
-  font-weight: 500;
-  font-style: italic;
-
-} */
 
 @font-face {
   font-family: "teleneo";
   src: url('../fonts/teleneo/teleneo-bold-webfont.woff2') format('woff2'),
     url('../fonts/teleneo/teleneo-bold-webfont.woff') format('woff');
   font-weight: 700;
-  font-style: normal;
-
 }
-
-/* @font-face {
-  font-family: "teleneo";
-  src: url('../fonts/teleneo/teleneo-bolditalic-webfont.woff2') format('woff2'),
-    url('../fonts/teleneo/teleneo-bolditalic-webfont.woff') format('woff');
-  font-weight: 700;
-  font-style: italic;
-
-} */
 
 @font-face {
   font-family: "teleneo";
   src: url('../fonts/teleneo/teleneo-extrabold-webfont.woff2') format('woff2'),
     url('../fonts/teleneo/teleneo-extrabold-webfont.woff') format('woff');
   font-weight: 800;
-  font-style: normal;
-
-}
-
-/* @font-face {
-  font-family: "teleneo";
-  src: url('../fonts/teleneo/teleneo-extrabolditalic-webfont.woff2') format('woff2'),
-    url('../fonts/teleneo/teleneo-extrabolditalic-webfont.woff') format('woff');
-  font-weight: 800;
-  font-style: italic;
-
 } */
 
 
@@ -476,7 +423,7 @@ body {
   min-width: 320px;
   position: relative;
   line-height: 1.6;
-  font-family: "teleneo", sans-serif;
+  font-family: 'TeleNeo', sans-serif;
   font-weight: 400;
   overflow-x: hidden;
 }
@@ -785,15 +732,7 @@ main {
   overflow: hidden;
 }
 
-.animate-dots--header {
-  position: absolute;
-  top: -200px;
-  right: -100px;
-  z-index: -1;
-}
-
 .title {
-  font-weight: 700;
   font-size: 70px;
   line-height: 120%;
   letter-spacing: 0.07em;
@@ -801,10 +740,12 @@ main {
   color: #FFFFFF;
   margin: 0;
   width: 100%;
+  font-weight: 800;
 }
 
 .main-slider__title--slider {
   width: 85%;
+  
 }
 
 .purple-text {
@@ -818,6 +759,7 @@ main {
   color: #FFFFFF;
   margin: 35px 0 50px;
   width: 100%;
+  font-weight: 400;
 }
 
 .main-slider__subtitle--slider {
@@ -912,11 +854,8 @@ main {
 /* project */
 
 .project {
-  padding-top: 188px;
-  background-image: url(/img/bg/bg-2.png);
-  background-size: auto;
-  background-position: right;
-  background-repeat: no-repeat;
+  padding-top: 150px;
+  z-index: 1;
 }
 
 .project__inner {
@@ -932,7 +871,7 @@ main {
 .project-left__item {
   display: flex;
   align-items: center;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
 }
 
 .project-left__item:last-child {
@@ -947,7 +886,7 @@ main {
 }
 
 .project-left__item-text {
-  font-weight: 700;
+  font-weight: 800;
   font-size: 36px;
   line-height: 130%;
   color: #FFFFFF;
@@ -977,7 +916,7 @@ main {
   line-height: 34px;
   color: #FFFFFF;
   font-style: normal;
-  margin: 0 0 20px;
+  margin: 0 0 30px;
 }
 
 .project-right__col-item:last-child {
@@ -1097,10 +1036,7 @@ main {
 
 .history {
   padding-top: 169px;
-  background-image: url(/img/bg/bg-3.png);
-  background-size: auto;
-  background-position: top 22% left 10%;
-  background-repeat: no-repeat;
+  z-index: 1;
 }
 
 .history__inner {
@@ -1109,7 +1045,7 @@ main {
 
 .history-text {
   margin-left: 74px;
-  width: calc(85% - 74px);
+  width: calc(70% - 74px);
 }
 
 .history-text__item {
@@ -1182,13 +1118,17 @@ main {
   font-size: 40px;
   line-height: 46px;
   color: #FFFFFF;
-  margin: 0 0 10px;
+  margin: 0 0 15px;
+}
+.team-row__item-top--big {
+  font-weight: 800;
+  font-size: 55px;
 }
 
 .team-row__item-bottom {
   font-size: 30px;
   line-height: 130%;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.6);
   margin: 0;
 }
 
@@ -1209,7 +1149,8 @@ main {
 }
 
 .team-row__right {
-  width: 65%;
+  max-width: 42%;
+  margin: auto;
 }
 
 @media screen and (max-width: 1080px) {
@@ -1274,10 +1215,6 @@ main {
 
 .advantage {
   padding-top: 169px;
-  background-image: url(/img/bg/bg-5.png);
-  background-size: auto;
-  background-position: top 22% left 10%;
-  background-repeat: no-repeat;
 }
 
 .advantage__inner {
@@ -1285,7 +1222,8 @@ main {
 }
 
 .advantage-text {
-  margin-left: 142px;
+  margin-left: 74px;
+    width: calc(85% - 74px);
 }
 
 .advantage-text__item {
@@ -1305,13 +1243,14 @@ main {
   display: block;
   margin-bottom: 10px;
   font-size: 40px;
+  font-weight: 800;
 }
 
 .advantage-text__item-num {
   position: absolute;
   z-index: -1;
-  top: -26px;
-  right: -34px;
+  top: -24px;
+  right: 0;
 }
 
 .btn-advantage {
@@ -1428,7 +1367,7 @@ main {
   border: 2px solid #FFFFFF;
   box-sizing: border-box;
   border-radius: 5px;
-  padding: 13px 10px;
+  padding: 13px 20px;
   text-align: center;
   transition: all .2s linear;
 }
@@ -1441,7 +1380,6 @@ main {
 .career-btn--black {
   border: 2px solid transparent;
   background: #262626;
-  padding: 13px 9px;
   margin-left: 20px;
 }
 
@@ -1872,4 +1810,26 @@ svg .mech-blue {
   100% {
     transform: rotate(-45.4deg) translateX(-72px) translateY(43px)
   }
+}
+
+
+.animate-dots--header {
+  position: absolute;
+  top: -200px;
+  right: -100px;
+  z-index: -1;
+}
+
+.animate-dots--project {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.animate-dots--history {
+  position: absolute;
+  top: 400px;
+  left: 0;
+  z-index: -1;
 }
