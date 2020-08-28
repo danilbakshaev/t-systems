@@ -67,6 +67,12 @@ $(function () {
     }, 1500);
   });
 
+  $(".requisites__inner").hide()
+  $(".contact__text-city--requisites").click(function () {
+    $(this).toggleClass("contact__text-city--close");
+    $(this).next().slideToggle("slow");
+  });
+
   ymaps.ready(function () {
     var myMap = new ymaps.Map('map', {
         center: [59.9367942, 30.2856246],
