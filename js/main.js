@@ -1,57 +1,268 @@
-$(function() {
+$(function () {
 
   $('.main-slider__inner').slick({
     arrows: false,
     dots: true
   });
 
-	//Валидатор форм и маска для форм
-	const offerFormModal = $('.offer-form-modal')
-	offerFormModal.submit(function(e) {
-			e.preventDefault()
-	})
+  //Валидатор форм и маска для форм
+  const offerFormModal = $('.offer-form-modal')
+  offerFormModal.submit(function (e) {
+    e.preventDefault()
+  })
 
-	offerFormModal.validate({
-			errorElement: "",
-			errorPlacement: (error, element) =>
-					error.appendTo(element.parent().parent()),
-			rules: {
-					tel: {
-							maskRu: true
-					}
-			},
-			messages: {
-					name: "",
-					tel: ""
-			},
-			submitHandler: function (form) {
-					const formInstance = $(form)
+  offerFormModal.validate({
+    errorElement: "",
+    errorPlacement: (error, element) =>
+      error.appendTo(element.parent().parent()),
+    rules: {
+      tel: {
+        maskRu: true
+      }
+    },
+    messages: {
+      name: "",
+      tel: ""
+    },
+    submitHandler: function (form) {
+      const formInstance = $(form)
 
-					console.log('submit')
-					$.ajax({
-							type: "POST",
-							url: "mail.php",
-							data: formInstance.serialize()
-					}).done(function() {
-							console.log('DONE')
-							formInput.val("");
-							formInput.siblings().removeClass('active')
-							$('.modal-wrapper-offer .success-message').addClass('show')
-					});
-					return false;
-			}
-	});
-	jQuery.validator.addMethod('maskRu', function(value, element) {
-			console.log(/\+\d{1}\(\d{3}\)\d{3}-\d{4}/g.test(value));
-			return /\+\d{1}\(\d{3}\)\d{3}-\d{4}/g.test(value);
-	});
-	$('[name="tel"]').mask("+7(999)999-9999",{autoclear: false});
+      console.log('submit')
+      $.ajax({
+        type: "POST",
+        url: "mail.php",
+        data: formInstance.serialize()
+      }).done(function () {
+        console.log('DONE')
+        formInput.val("");
+        formInput.siblings().removeClass('active')
+        $('.modal-wrapper-offer .success-message').addClass('show')
+      });
+      return false;
+    }
+  });
+  jQuery.validator.addMethod('maskRu', function (value, element) {
+    console.log(/\+\d{1}\(\d{3}\)\d{3}-\d{4}/g.test(value));
+    return /\+\d{1}\(\d{3}\)\d{3}-\d{4}/g.test(value);
+  });
+  $('[name="tel"]').mask("+7(999)999-9999", {
+    autoclear: false
+  });
+
+  $("#menu").on("click", "a", function (event) {
+    event.preventDefault();
+    var id = $(this).attr('href'),
+      top = $(id).offset().top;
+    $('body,html').animate({
+      scrollTop: top
+    }, 1500);
+  });
+
+  $("#mobile-menu").on("click", "a", function (event) {
+    event.preventDefault();
+    var id = $(this).attr('href'),
+      top = $(id).offset().top;
+    $('body,html').animate({
+      scrollTop: top
+    }, 1500);
+  });
+
+  ymaps.ready(function () {
+    var myMap = new ymaps.Map('map', {
+        center: [59.9367942, 30.2856246],
+        zoom: 14,
+        // controls: []
+      }),
+
+      placemark1 = new ymaps.Placemark([59.9361524, 30.276121], {
+        hintContent: '',
+        balloonContent: ''
+      }, {
+        // Опции.
+        // Необходимо указать данный тип макета.
+        iconLayout: 'default#image',
+        // Своё изображение иконки метки.
+        iconImageHref: 'img/other/location.svg',
+        // Размеры метки.
+        iconImageSize: [44, 55],
+        // Смещение левого верхнего угла иконки относительно
+        // её "ножки" (точки привязки).
+        iconImageOffset: [-5, -38]
+      }),
+
+      placemark2 = new ymaps.Placemark([59.9415319, 30.2757611], {
+        hintContent: '',
+        balloonContent: ''
+      }, {
+        // Опции.
+        // Необходимо указать данный тип макета.
+        iconLayout: 'default#image',
+        // Своё изображение иконки метки.
+        iconImageHref: 'img/other/location.svg',
+        // Размеры метки.
+        iconImageSize: [44, 55],
+        // Смещение левого верхнего угла иконки относительно
+        // её "ножки" (точки привязки).
+        iconImageOffset: [-5, -38]
+      });
+
+    myMap.geoObjects
+      .add(placemark1)
+      .add(placemark2);
+
+    // myMap.behaviors.get('drag').disable();
+    myMap.behaviors.get('scrollZoom').disable();
+    myMap.behaviors.get('rightMouseButtonMagnifier').disable();
+    myMap.behaviors.get('dblClickZoom').disable();
+
+
+    const placemark1HTML = $('#placemark1');
+    const placemark2HTML = $('#placemark2');
+
+    placemark1.events.add('click', function () {
+      closeAllPlacemark();
+      placemark1HTML.addClass('show');
+    });
+    placemark2.events.add('click', function () {
+      closeAllPlacemark();
+      placemark2HTML.addClass('show');
+    });
+    myMap.events.add('click', function () {
+      closeAllPlacemark();
+    });
+
+    function closeAllPlacemark() {
+      placemark1HTML.removeClass('show');
+      placemark2HTML.removeClass('show');
+    }
+  });
+
+  ymaps.ready(function () {
+    var myMap = new ymaps.Map('map2', {
+        center: [51.6577802, 39.1930473],
+        zoom: 14,
+        // controls: []
+      }),
+
+      placemark1 = new ymaps.Placemark([51.6564897, 39.1889681], {
+        hintContent: '',
+        balloonContent: ''
+      }, {
+        // Опции.
+        // Необходимо указать данный тип макета.
+        iconLayout: 'default#image',
+        // Своё изображение иконки метки.
+        iconImageHref: 'img/other/location.svg',
+        // Размеры метки.
+        iconImageSize: [44, 55],
+        // Смещение левого верхнего угла иконки относительно
+        // её "ножки" (точки привязки).
+        iconImageOffset: [-5, -38]
+      }),
+
+      placemark2 = new ymaps.Placemark([51.6595472, 39.1915463], {
+        hintContent: '',
+        balloonContent: ''
+      }, {
+        // Опции.
+        // Необходимо указать данный тип макета.
+        iconLayout: 'default#image',
+        // Своё изображение иконки метки.
+        iconImageHref: 'img/other/location.svg',
+        // Размеры метки.
+        iconImageSize: [44, 55],
+        // Смещение левого верхнего угла иконки относительно
+        // её "ножки" (точки привязки).
+        iconImageOffset: [-5, -38]
+      });
+
+    myMap.geoObjects
+      .add(placemark1)
+      .add(placemark2);
+
+    // myMap.behaviors.get('drag').disable();
+    myMap.behaviors.get('scrollZoom').disable();
+    myMap.behaviors.get('rightMouseButtonMagnifier').disable();
+    myMap.behaviors.get('dblClickZoom').disable();
+
+
+    const placemark1HTML = $('#placemark1');
+    const placemark2HTML = $('#placemark2');
+
+    placemark1.events.add('click', function () {
+      closeAllPlacemark();
+      placemark1HTML.addClass('show');
+    });
+    placemark2.events.add('click', function () {
+      closeAllPlacemark();
+      placemark2HTML.addClass('show');
+    });
+    myMap.events.add('click', function () {
+      closeAllPlacemark();
+    });
+
+    function closeAllPlacemark() {
+      placemark1HTML.removeClass('show');
+      placemark2HTML.removeClass('show');
+    }
+  });
+
+  ymaps.ready(function () {
+    var myMap = new ymaps.Map('map3', {
+        center: [55.7948247, 37.7130722],
+        zoom: 14,
+        // controls: []
+      }),
+
+      placemark1 = new ymaps.Placemark([55.7948247, 37.7130722], {
+        hintContent: '',
+        balloonContent: ''
+      }, {
+        // Опции.
+        // Необходимо указать данный тип макета.
+        iconLayout: 'default#image',
+        // Своё изображение иконки метки.
+        iconImageHref: 'img/other/location.svg',
+        // Размеры метки.
+        iconImageSize: [44, 55],
+        // Смещение левого верхнего угла иконки относительно
+        // её "ножки" (точки привязки).
+        iconImageOffset: [-5, -38]
+      });
+
+    myMap.geoObjects
+      .add(placemark1);
+
+    // myMap.behaviors.get('drag').disable();
+    myMap.behaviors.get('scrollZoom').disable();
+    myMap.behaviors.get('rightMouseButtonMagnifier').disable();
+    myMap.behaviors.get('dblClickZoom').disable();
+
+
+    const placemark1HTML = $('#placemark1');
+
+    placemark1.events.add('click', function () {
+      closeAllPlacemark();
+      placemark1HTML.addClass('show');
+    });
+    placemark2.events.add('click', function () {
+      closeAllPlacemark();
+      placemark2HTML.addClass('show');
+    });
+    myMap.events.add('click', function () {
+      closeAllPlacemark();
+    });
+
+    function closeAllPlacemark() {
+      placemark1HTML.removeClass('show');
+    }
+  });
 
 });
 
 //Модальные окна на Pure Js
-(function() {
-  
+(function () {
+
   //Вызов окна колбека
   // openCallback = document.querySelector('.openCallback');
   // callbackModal = document.querySelector('.modal-wrapper__callback');
@@ -91,8 +302,8 @@ $(function() {
 
   function closeleftMenuModal() {
     if (!leftMenuModal.classList.contains('hidden')) {
-      leftMenuModal.classList.add('animation');    
-      leftMenuModal.addEventListener('transitionend', function(e) {
+      leftMenuModal.classList.add('animation');
+      leftMenuModal.addEventListener('transitionend', function (e) {
         leftMenuModal.classList.add('hidden');
       }, {
         capture: false,
@@ -125,8 +336,8 @@ $(function() {
 
   function closeBaseModal() {
     body.classList.remove('noflow');
-    modalWrapper.classList.add('animation');    
-    modalWrapper.addEventListener('transitionend', function(e) {
+    modalWrapper.classList.add('animation');
+    modalWrapper.addEventListener('transitionend', function (e) {
       modalWrapper.classList.add('hidden');
     }, {
       capture: false,
@@ -135,7 +346,7 @@ $(function() {
     });
   };
 
-  for(let i = 0; i<modalWrapperClose.length; i++){
+  for (let i = 0; i < modalWrapperClose.length; i++) {
     modalWrapperClose[i].addEventListener('click', () => {
       closeAllModal();
     });
@@ -145,9 +356,9 @@ $(function() {
     closeAllModal();
   })
 
-  document.onkeydown = function(e) {
+  document.onkeydown = function (e) {
     e = e || window.event;
-    if (e.key=='Escape'||e.key=='Esc'||e.keyCode==27) {
+    if (e.key == 'Escape' || e.key == 'Esc' || e.keyCode == 27) {
       closeAllModal();
     }
   };
@@ -156,31 +367,46 @@ $(function() {
 
 
 
-(function() {
+(function () {
 
   threeOne = document.querySelector('#threeOne');
 
-  var mousePos = {x:.5,y:.5};
-  document.addEventListener('mousemove', function (event) {  mousePos = {x:event.clientX/window.innerWidth, y:event.clientY/window.innerHeight};});
+  var mousePos = {
+    x: .5,
+    y: .5
+  };
+  document.addEventListener('mousemove', function (event) {
+    mousePos = {
+      x: event.clientX / window.innerWidth,
+      y: event.clientY / window.innerHeight
+    };
+  });
   var phase = 0;
 
   var scene = new THREE.Scene();
   var camera = new THREE.PerspectiveCamera(95, 1000 / 1000, 0.1, 1000);
   camera.position.z = 45;
 
-  var renderer = new THREE.WebGLRenderer({ alpha: true });
+  var renderer = new THREE.WebGLRenderer({
+    alpha: true
+  });
   renderer.setSize(1000, 1000);
 
   threeOne.appendChild(renderer.domElement);
 
   var boxSize = 0.2;
   var geometry = new THREE.BoxGeometry(boxSize, boxSize, boxSize);
-  var materialGreen = new THREE.MeshBasicMaterial({transparent: true,  color: 0xff007a,  opacity: 0.4,  side: THREE.DoubleSide});
+  var materialGreen = new THREE.MeshBasicMaterial({
+    transparent: true,
+    color: 0xff007a,
+    opacity: 0.4,
+    side: THREE.DoubleSide
+  });
 
   var pitchSegments = 60;
-  var elevationSegments = pitchSegments/2;
-  var particles = pitchSegments*elevationSegments
-  var side = Math.pow(particles, 1/3);
+  var elevationSegments = pitchSegments / 2;
+  var particles = pitchSegments * elevationSegments
+  var side = Math.pow(particles, 1 / 3);
 
   var radius = 16;
 
@@ -189,17 +415,17 @@ $(function() {
   scene.add(parentContainer);
 
   function posInBox(place) {
-    return ((place/side) - 0.5) * radius * 1.2;  
+    return ((place / side) - 0.5) * radius * 1.2;
   }
 
   //Plant the seeds, grow some trees in a grid!
   for (var p = 0; p < pitchSegments; p++) {
-    var pitch = Math.PI * 2 * p / pitchSegments ;
+    var pitch = Math.PI * 2 * p / pitchSegments;
     for (var e = 0; e < elevationSegments; e++) {
-      var elevation = Math.PI  * ((e / elevationSegments)-0.5)
+      var elevation = Math.PI * ((e / elevationSegments) - 0.5)
       var particle = new THREE.Mesh(geometry, materialGreen);
-      
-      
+
+
       parentContainer.add(particle);
 
       var dest = new THREE.Vector3();
@@ -208,10 +434,13 @@ $(function() {
       dest.y = Math.sin(elevation) * radius; //y pos in sphere
 
       particle.position.x = posInBox(parentContainer.children.length % side);
-      particle.position.y = posInBox(Math.floor(parentContainer.children.length/side) % side);
-      particle.position.z = posInBox(Math.floor(parentContainer.children.length/Math.pow(side,2)) % side);
+      particle.position.y = posInBox(Math.floor(parentContainer.children.length / side) % side);
+      particle.position.z = posInBox(Math.floor(parentContainer.children.length / Math.pow(side, 2)) % side);
       // console.log(side, parentContainer.children.length, particle.position.x, particle.position.y, particle.position.z)
-      particle.userData = {dests: [dest,particle.position.clone()], speed: new THREE.Vector3() };
+      particle.userData = {
+        dests: [dest, particle.position.clone()],
+        speed: new THREE.Vector3()
+      };
     }
   }
 
@@ -219,17 +448,17 @@ $(function() {
     phase += 0.002;
     for (var i = 0, l = parentContainer.children.length; i < l; i++) {
       var particle = parentContainer.children[i];
-      var dest = particle.userData.dests[Math.floor(phase)%particle.userData.dests.length].clone();
+      var dest = particle.userData.dests[Math.floor(phase) % particle.userData.dests.length].clone();
       var diff = dest.sub(particle.position);
       particle.userData.speed.divideScalar(1.02); // Some drag on the speed
-      particle.userData.speed.add(diff.divideScalar(400));// Modify speed by a fraction of the distance to the dest    
+      particle.userData.speed.add(diff.divideScalar(400)); // Modify speed by a fraction of the distance to the dest    
       particle.position.add(particle.userData.speed);
       particle.lookAt(dest);
     }
-    
-    parentContainer.rotation.y = phase*3;
-    parentContainer.rotation.x = (mousePos.y-0.5) * Math.PI;
-    parentContainer.rotation.z = (mousePos.x-0.5) * Math.PI;
+
+    parentContainer.rotation.y = phase * 3;
+    parentContainer.rotation.x = (mousePos.y - 0.5) * Math.PI;
+    parentContainer.rotation.z = (mousePos.x - 0.5) * Math.PI;
 
     renderer.render(scene, camera);
     requestAnimationFrame(render);
@@ -279,8 +508,8 @@ $(function() {
 //     for (var e = 0; e < elevationSegments; e++) {
 //       var elevation = Math.PI  * ((e / elevationSegments)-0.5)
 //       var particle = new THREE.Mesh(geometry, materialGreen);
-      
-      
+
+
 //       parentContainer.add(particle);
 
 //       var dest = new THREE.Vector3();
@@ -307,7 +536,7 @@ $(function() {
 //       particle.position.add(particle.userData.speed);
 //       particle.lookAt(dest);
 //     }
-    
+
 //     parentContainer.rotation.y = phase*3;
 //     parentContainer.rotation.x = (mousePos.y-0.5) * Math.PI;
 //     parentContainer.rotation.z = (mousePos.x-0.5) * Math.PI;
@@ -360,8 +589,8 @@ $(function() {
 //     for (var e = 0; e < elevationSegments; e++) {
 //       var elevation = Math.PI  * ((e / elevationSegments)-0.5)
 //       var particle = new THREE.Mesh(geometry, materialGreen);
-      
-      
+
+
 //       parentContainer.add(particle);
 
 //       var dest = new THREE.Vector3();
@@ -388,7 +617,7 @@ $(function() {
 //       particle.position.add(particle.userData.speed);
 //       particle.lookAt(dest);
 //     }
-    
+
 //     parentContainer.rotation.y = phase*3;
 //     parentContainer.rotation.x = (mousePos.y-0.5) * Math.PI;
 //     parentContainer.rotation.z = (mousePos.x-0.5) * Math.PI;
