@@ -524,7 +524,7 @@ img {
   max-width: 1400px;
   width: 100%;
   margin: 0 auto;
-  position: relative;
+  /* position: relative; */
 }
 
 @media screen and (max-width: 1440px) {
@@ -1371,15 +1371,27 @@ main {
 
 .career-middle {
   margin: 115px 0;
-  background: url(/img/bg/image22.jpg) right center no-repeat;
-  background-size: cover;
+  /* background: url(/img/bg/image22.jpg) right center no-repeat;
+  background-size: cover; */
   overflow: hidden;
+  position: relative;
+  background-color: #E20074;
+  z-index: 1;
 }
 
 .career-content__wrap {
   width: 43%;
   padding: 100px 0;
   margin-left: 140px;
+  background-color: #E20074;
+}
+.career-content__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: auto;
+  z-index: -1;
 }
 
 .career-title {
@@ -2189,4 +2201,8 @@ svg .mech-blue {
   .requisites__item:last-child {
     margin-bottom: 0;
   }
+}
+
+canvas {
+  display: none;
 }
