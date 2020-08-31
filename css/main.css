@@ -808,7 +808,7 @@ main {
   background-size: auto;
   background-position: right;
   background-repeat: no-repeat; */
-  /* position: relative; */
+  position: relative;
   z-index: 1;
   overflow: hidden;
   margin-top: -1px;
@@ -1897,7 +1897,7 @@ main {
 }
 
 .social-link:hover .social-hover {
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 .social-right {
@@ -2326,17 +2326,20 @@ svg .mech-blue {
 
 @media screen and (max-width: 992px) {
   .animate-dots--header {
-    right: auto;
-    left: 50%;
-    top: 40%;
-    -webkit-transform: translate(-50%, -40%);
-        -ms-transform: translate(-50%, -40%);
-            transform: translate(-50%, -40%);
+    right: -300px;
+    top: -300px;
   }
 
   .animate-dots--header canvas {
     width: 100% !important;
     height: auto !important;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .animate-dots--header {
+    right: -100px;
+    top: -100px;
   }
 }
 
@@ -2711,6 +2714,69 @@ svg .mech-blue {
   }
 }
 
-canvas {
-  display: none;
+.marquee {
+  overflow: hidden;
+  font-size: 0;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  white-space: nowrap;
+  cursor: default;
+  user-select: none;
+}
+
+.marquee__inner {
+  font-weight: 800;
+  font-size: 150px;
+  line-height: 100%;
+  text-shadow: 
+		-0   -2px 0   #FFFFFF,
+		 0   -2px 0   #FFFFFF,
+		-0    2px 0   #FFFFFF,
+		 0    2px 0   #FFFFFF,
+		-2px -0   0   #FFFFFF,
+		 2px -0   0   #FFFFFF,
+		-2px  0   0   #FFFFFF,
+		 2px  0   0   #FFFFFF,
+		-1px -2px 0   #FFFFFF,
+		 1px -2px 0   #FFFFFF,
+		-1px  2px 0   #FFFFFF,
+		 1px  2px 0   #FFFFFF,
+		-2px -1px 0   #FFFFFF,
+		 2px -1px 0   #FFFFFF,
+		-2px  1px 0   #FFFFFF,
+		 2px  1px 0   #FFFFFF,
+		-2px -2px 0   #FFFFFF,
+		 2px -2px 0   #FFFFFF,
+		-2px  2px 0   #FFFFFF,
+		 2px  2px 0   #FFFFFF,
+		-2px -2px 0   #FFFFFF,
+		 2px -2px 0   #FFFFFF,
+		-2px  2px 0   #FFFFFF,
+		 2px  2px 0   #FFFFFF;
+  /* border: 2px solid #FFFFFF; */
+  white-space: nowrap;
+  display: inline-block;
+}
+
+@media screen and (max-width: 992px) {
+  .marquee__inner {
+    font-size: 50px;
+    text-shadow: 
+		-0   -1px 0   #FFFFFF,
+		 0   -1px 0   #FFFFFF,
+		-0    1px 0   #FFFFFF,
+		 0    1px 0   #FFFFFF,
+		-1px -0   0   #FFFFFF,
+		 1px -0   0   #FFFFFF,
+		-1px  0   0   #FFFFFF,
+		 1px  0   0   #FFFFFF,
+		-1px -1px 0   #FFFFFF,
+		 1px -1px 0   #FFFFFF,
+		-1px  1px 0   #FFFFFF,
+		 1px  1px 0   #FFFFFF,
+		-1px -1px 0   #FFFFFF,
+		 1px -1px 0   #FFFFFF,
+		-1px  1px 0   #FFFFFF,
+		 1px  1px 0   #FFFFFF;
+  }
 }
