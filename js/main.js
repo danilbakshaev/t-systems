@@ -429,13 +429,13 @@ $(function () {
     var phase = 0;
 
     var scene = new THREE.Scene();
-    var camera = new THREE.PerspectiveCamera(95, 1000 / 1000, 0.1, 1000);
+    var camera = new THREE.PerspectiveCamera(95, 1300 / 1300, 0.1, 1000);
     camera.position.z = 45;
 
     var renderer = new THREE.WebGLRenderer({
       alpha: true
     });
-    renderer.setSize(1000, 1000);
+    renderer.setSize(1300, 1300);
 
     threeOne.appendChild(renderer.domElement);
 
