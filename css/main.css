@@ -879,6 +879,12 @@ img {
   height: 52px;
 }
 
+.main-slider__btn, 
+.main-slider__btn:active, 
+.main-slider__btn:focus {
+    outline: none;
+}
+
 /* slider */
 .slick-dots {
   margin: 91px 0 0;
@@ -1858,7 +1864,7 @@ img {
 }
 
 .social-left {
-  width: 56%;
+  width: 65%;
   margin-right: 26px;
 }
 
@@ -1899,7 +1905,7 @@ img {
 }
 
 .social-right {
-  width: 44%;
+  width: 35%;
   position: relative;
 }
 
@@ -2302,20 +2308,8 @@ svg .mech-blue {
 .animate-wrap {
   position: absolute;
   z-index: -1;
-  top: -200px;
-  right: 235px;
-}
-
-@media screen and (max-width: 2200px) {
-  .animate-wrap {
-    right: 0px;
-  }
-}
-
-@media screen and (max-width: 1920px) {
-  .animate-wrap {
-    right: -200px;
-  }
+  top: -350px;
+  right: -200px;
 }
 
 @media screen and (max-width: 992px) {
@@ -2717,21 +2711,16 @@ svg .mech-blue {
   }
 }
 
-.marquee {
-  overflow: hidden;
-  font-size: 0;
-  font-family: sans-serif;
-  text-transform: uppercase;
-  white-space: nowrap;
-  cursor: default;
-  user-select: none;
-  padding: 10px 0;
+.marquee{
+  display: flex;
+  justify-content: center;
 }
 
-.marquee__inner {
+.marquee__text {
   font-weight: 800;
-  font-size: 150px;
-  line-height: 100%;
+  font-size: 120px;
+  margin: 0;
+  text-transform: uppercase;
   text-shadow:
     -0 -2px 0 #FFFFFF,
     0 -2px 0 #FFFFFF,
@@ -2758,12 +2747,10 @@ svg .mech-blue {
     -2px 2px 0 #FFFFFF,
     2px 2px 0 #FFFFFF;
   /* border: 2px solid #FFFFFF; */
-  white-space: nowrap;
-  display: inline-block;
 }
 
 @media screen and (max-width: 992px) {
-  .marquee__inner {
+  .marquee__text {
     font-size: 50px;
     text-shadow:
       -0 -1px 0 #FFFFFF,
