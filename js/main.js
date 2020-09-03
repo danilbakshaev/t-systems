@@ -264,7 +264,6 @@ $(function () {
       }
     });
   }
-  
 
   
 
@@ -297,7 +296,14 @@ $(function () {
   //     });
   //   }
   // };
+  window.addEventListener('scroll', function(e) {
+    if (window.pageYOffset >= '2300') {
+      document.querySelector('.animate-wrap').classList.add('threeOne--hidden');
+    } else {
+      document.querySelector('.animate-wrap').classList.remove('threeOne--hidden');
+    }
 
+  });
   //Вызов окна колбека
   openLeftMenu = document.querySelector('.openMenu');
   leftMenuModal = document.querySelector('.modal-wrapper__left-menu');

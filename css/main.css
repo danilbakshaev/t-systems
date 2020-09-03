@@ -1864,7 +1864,7 @@ img {
 }
 
 .social-left {
-  width: 65%;
+  width: calc(65% - 26px);
   margin-right: 26px;
 }
 
@@ -1907,6 +1907,11 @@ img {
 .social-right {
   width: 35%;
   position: relative;
+}
+.social-right svg {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
 }
 
 
@@ -2306,37 +2311,25 @@ svg .mech-blue {
 }
 
 .animate-wrap {
-  position: absolute;
-  z-index: -1;
-  top: -350px;
-  right: -200px;
+  position: fixed;
+  left: 50%;
+  top: -200px;
+  margin-left: -150px;
+  transition: all ease .3s;
+}
+.threeOne--hidden {
+  opacity: 0;
+}
+.animate-container{
+  position: relative; 
+}
+.animate-bounce .container{
+  position: relative;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   .animate-wrap {
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    text-align: center;
-  }
-
-  .animate-wrap canvas {
-    width: 100% !important;
-    height: auto !important;
-  }
-}
-
-@media screen and (max-width: 850px) {
-  .animate-wrap {
-    top: 0;
-  }
-}
-
-@media screen and (max-width: 580px) {
-  .animate-wrap {
-    top: 75px;
+    display: none;
   }
 }
 
