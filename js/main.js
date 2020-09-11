@@ -67,7 +67,7 @@ $(function () {
     }, 1500);
   });
 
-  $(".requisites__inner").hide()
+  $(".requisites__wrap").hide()
   $(".contact__text-city--requisites").click(function () {
     $(this).toggleClass("contact__text-city--close");
     $(this).next().slideToggle("slow");
