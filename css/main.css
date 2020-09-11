@@ -2316,6 +2316,7 @@ svg .mech-blue {
   top: -200px;
   margin-left: -150px;
   transition: all ease .3s;
+  z-index: -1;
 }
 .threeOne--hidden {
   opacity: 0;
