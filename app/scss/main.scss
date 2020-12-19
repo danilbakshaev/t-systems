@@ -2752,6 +2752,7 @@ svg .mech-blue {
 .blog {
   overflow: hidden;
   margin-bottom: 128px;
+  position: relative;
 }
 
 .blog__inner {
@@ -2762,22 +2763,24 @@ svg .mech-blue {
 }
 
 .blog__left {
-  position: relative;
+  // position: relative;
   width: 50%;
   &::after {
     position: absolute;
-    content: url(/img/about/substrate.svg);
+    content: "";
+    background-image: url(/img/about/substrate.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 50%;
     height: 100%;
-    background-position: 100% center;
     z-index: -1;
   }
 }
 
 .blog__left-wrap {
-  padding: 94px 145px 130px 135px;
+  padding: 94px 160px 130px 0;
 }
 
 .blog__title {
@@ -2801,14 +2804,17 @@ svg .mech-blue {
 }
 
 .blog__right {
-  position: relative;
+  // position: relative;
   width: 50%;
   img {
+    display: block;
+    object-fit: cover;
     position: absolute;
     z-index: -3;
     top: 0;
     right: -45px;
-    width: 122%;
+    width: 60%;
+    height: 100%;
   }
 }
 
@@ -2823,4 +2829,8 @@ svg .mech-blue {
 .btn--blog {
   width: 330px;
   height: 50px;
+}
+
+.blog__inner-wrap {
+  position: relative;
 }
